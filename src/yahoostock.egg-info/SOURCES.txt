@@ -1,0 +1,9 @@
+LICENSE
+pyproject.toml
+setup.cfg
+src/yahoostock/__init__.py
+src/yahoostock/yahoo.py
+src/yahoostock.egg-info/PKG-INFO
+src/yahoostock.egg-info/SOURCES.txt
+src/yahoostock.egg-info/dependency_links.txt
+src/yahoostock.egg-info/top_level.txt
