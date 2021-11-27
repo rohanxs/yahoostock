@@ -1,9 +1,0 @@
-LICENSE
-pyproject.toml
-setup.cfg
-src/stockscrape/__init__.py
-src/stockscrape/yahoo.py
-src/stockscrape_rohan0x.egg-info/PKG-INFO
-src/stockscrape_rohan0x.egg-info/SOURCES.txt
-src/stockscrape_rohan0x.egg-info/dependency_links.txt
-src/stockscrape_rohan0x.egg-info/top_level.txt
