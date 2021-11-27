@@ -1,4 +1,4 @@
-# yahoo-
+# yahoostock
  A package designed to scrape data from Yahoo Finance.
 
 ## Installation
