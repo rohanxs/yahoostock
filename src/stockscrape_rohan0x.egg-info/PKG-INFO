@@ -1,0 +1,27 @@
+Metadata-Version: 2.1
+Name: stockscrape-rohan0x
+Version: 0.0.1
+Summary: A package designed to scrape data from various business websites such as Yahoo Finance and CNN Business.
+Home-page: https://github.com/rohan0x/stockscrape
+Author: Rohan Singh
+Author-email: rohansingh07294@gmail.com
+License: UNKNOWN
+Project-URL: Bug Tracker, https://github.com/rohan0x/stockscrape/issues
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# stockscrape
+ A package designed to scrape data from various business websites such as Yahoo Finance and CNN Business.
+
+## Installation
+```
+pip install stockscrape
+```
+## Usage
+Call `print(dir(stockscrape))` and refer to the Python docstrings of the respective functions for more specific information.
+
