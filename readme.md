@@ -6,4 +6,9 @@
 pip install yahoostock
 ```
 ## Usage
-Call `print(dir(yahoostock))` and refer to method names for the statistics of a certain stock.
+Use the following code to see a list of useful methods.
+```py
+from yahoostock import yahoo
+print(dir(yahoo))
+```
+Note that each method accepts a stock ticker as a single parameter and returns a float with the specified statistic.
