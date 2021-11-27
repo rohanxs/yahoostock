@@ -5,6 +5,5 @@
 ```
 pip install stock-scrape
 ```
-
 ## Usage
 Call `print(dir(stock-scrape))` and refer to the Python docstrings of the respective functions for more specific information.
