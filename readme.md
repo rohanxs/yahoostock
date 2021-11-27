@@ -6,4 +6,4 @@
 pip install stockscrape
 ```
 ## Usage
-Call `print(dir(stockscrape))` and refer to the Python docstrings of the respective functions for more specific information.
+Call `print(dir(stockscrape))` and refer to method names for the statistics of a certain stock.
