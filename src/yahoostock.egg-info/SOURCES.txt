@@ -1,6 +1,8 @@
 LICENSE
+README.md
 pyproject.toml
 setup.cfg
+setup.py
 src/yahoostock/__init__.py
 src/yahoostock/yahoo.py
 src/yahoostock.egg-info/PKG-INFO

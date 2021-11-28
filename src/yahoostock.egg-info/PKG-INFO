@@ -1,12 +1,11 @@
 Metadata-Version: 2.1
 Name: yahoostock
-Version: 0.0.1
-Summary: A package designed to scrape data from various business websites such as Yahoo Finance and CNN Business.
+Version: 0.0.2
+Summary: A package designed to scrape data from Yahoo Finance.
 Home-page: https://github.com/rohan0x/stockscrape
 Author: rohan0x
-Author-email: rohansingh07294@gmail.com
-License: UNKNOWN
-Project-URL: Bug Tracker, https://github.com/rohan0x/stockscrape/issues
+License: MIT
+Project-URL: Bug Tracker, https://github.com/pypa/sampleproject/issues
 Platform: UNKNOWN
 Classifier: Programming Language :: Python :: 3
 Classifier: License :: OSI Approved :: MIT License
@@ -19,9 +18,38 @@ License-File: LICENSE
  A package designed to scrape data from Yahoo Finance.
 
 ## Installation
+The most simple installation method is through PIP.
 ```
 pip install yahoostock
 ```
+The PyPI page can be found [here](https://pypi.org/project/yahoostock/).
+
 ## Usage
-Call `print(dir(yahoostock))` and refer to method names for the statistics of a certain stock.
+Use the following code to see a list of useful methods.
+```py
+from yahoostock import yahoo
+print(dir(yahoo))
+```
+Note that each method accepts a stock ticker as a single parameter and returns a float with the specified statistic.
+
+Here's an example:
+```py
+from yahoostock import yahoo
+
+stock_name = "GOOGL"
+
+function_list = [
+    yahoo.get_price,
+    yahoo.get_open,
+    yahoo.get_previous_close,
+    yahoo.get_change,
+    yahoo.get_percent_change
+]
+
+for function in function_list:
+    # prints current price($), opening price (%), previous closing price ($),
+    # change in price ($), and relative change (%)
+    print(function(stock_name))
+```
+
 
