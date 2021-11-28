@@ -1,3 +1,9 @@
+![Version](https://img.shields.io/pypi/v/yahoostock?color=g)
+![Package Size](https://img.shields.io/github/repo-size/rohan0x/yahoostock)
+![Last Commit](https://img.shields.io/github/last-commit/rohan0x/yahoostock)
+![Release Date](https://img.shields.io/github/release-date-pre/rohan0x/yahoostock)
+![License](https://img.shields.io/pypi/l/yahoostock)
+
 # yahoostock
  A package designed to scrape data from Yahoo Finance.
 
@@ -31,7 +37,7 @@ function_list = [
 ]
 
 for function in function_list:
-    # prints current price($), opening price (%), previous closing price ($),
+    # prints price ($), opening price (%), last closing price ($),
     # change in price ($), and relative change (%)
     print(function(stock_name))
 ```

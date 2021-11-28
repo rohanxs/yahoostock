@@ -1,6 +1,6 @@
 Metadata-Version: 2.1
 Name: yahoostock
-Version: 0.0.2
+Version: 1.0.0
 Summary: A package designed to scrape data from Yahoo Finance.
 Home-page: https://github.com/rohan0x/stockscrape
 Author: rohan0x
@@ -13,6 +13,12 @@ Classifier: Operating System :: OS Independent
 Requires-Python: >=3.7
 Description-Content-Type: text/markdown
 License-File: LICENSE
+
+![Version](https://img.shields.io/pypi/v/yahoostock?color=g)
+![Package Size](https://img.shields.io/github/repo-size/rohan0x/yahoostock)
+![Last Commit](https://img.shields.io/github/last-commit/rohan0x/yahoostock)
+![Release Date](https://img.shields.io/github/release-date-pre/rohan0x/yahoostock)
+![License](https://img.shields.io/pypi/l/yahoostock)
 
 # yahoostock
  A package designed to scrape data from Yahoo Finance.
