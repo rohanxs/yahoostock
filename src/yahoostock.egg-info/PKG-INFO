@@ -1,9 +1,9 @@
 Metadata-Version: 2.1
 Name: yahoostock
-Version: 1.0.0
+Version: 1.1.0
 Summary: A package designed to scrape data from Yahoo Finance.
 Home-page: https://github.com/rohan0x/stockscrape
-Author: rohan0x
+Author: Rohan Singh
 License: MIT
 Project-URL: Bug Tracker, https://github.com/pypa/sampleproject/issues
 Platform: UNKNOWN
@@ -53,7 +53,7 @@ function_list = [
 ]
 
 for function in function_list:
-    # prints current price($), opening price (%), previous closing price ($),
+    # prints price ($), opening price ($), last closing price ($),
     # change in price ($), and relative change (%)
     print(function(stock_name))
 ```
