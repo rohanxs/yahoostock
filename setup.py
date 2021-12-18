@@ -5,8 +5,8 @@ with open("README.md", "r", encoding="utf-8") as fh:
 
 setuptools.setup(
     name="yahoostock",
-    version="1.0.0",
-    author="rohan0x",
+    version="1.1.0",
+    author="Rohan Singh",
     license="MIT",
     description="A package designed to scrape data from Yahoo Finance.",
     long_description=long_description,

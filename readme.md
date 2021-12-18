@@ -37,7 +37,7 @@ function_list = [
 ]
 
 for function in function_list:
-    # prints price ($), opening price (%), last closing price ($),
+    # prints price ($), opening price ($), last closing price ($),
     # change in price ($), and relative change (%)
     print(function(stock_name))
 ```

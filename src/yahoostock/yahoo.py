@@ -1,6 +1,7 @@
 from requests import get
 
 def get_price(stock_name : str):
+    '''Returns the current price of some stock.'''
     url = f"https://finance.yahoo.com/quote/{stock_name}?p={stock_name}&.tsrc=fin-srch"
     scraped_text = get(url).text
 
@@ -14,6 +15,7 @@ def get_price(stock_name : str):
     )
 
 def get_percent_change(stock_name : str):
+    '''Returns the percent change in price of some stock in the past day.'''
     url = f"https://finance.yahoo.com/quote/{stock_name}?p={stock_name}"
     scraped_text = get(url).text
 
@@ -28,6 +30,7 @@ def get_percent_change(stock_name : str):
     )
 
 def get_change(stock_name : str):
+    '''Returns the total change in price of a stock in the past day.'''
     url = f"https://finance.yahoo.com/quote/{stock_name}?p={stock_name}"
     scraped_text = get(url).text
 
@@ -41,6 +44,7 @@ def get_change(stock_name : str):
     )
 
 def get_open(stock_name : str):
+    '''Returns the most recent opening price of some stock.'''
     url = f"https://finance.yahoo.com/quote/{stock_name}?p={stock_name}&.tsrc=fin-srch"
     scraped_text = get(url).text
 
@@ -54,6 +58,7 @@ def get_open(stock_name : str):
     )
 
 def get_previous_close(stock_name : str):
+    '''Returns thei most recent closing price of some stock.'''
     url = f"https://finance.yahoo.com/quote/{stock_name}?p={stock_name}&.tsrc=fin-srch"
     scraped_text = get(url).text
 
