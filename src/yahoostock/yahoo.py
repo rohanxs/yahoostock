@@ -5,12 +5,12 @@ def get_price(stock_name : str):
     url = f"https://finance.yahoo.com/quote/{stock_name}?p={stock_name}&.tsrc=fin-srch"
     scraped_text = get(url).text
 
-    _ = scraped_text.index("\"Trsdu(0.3s) Fw(b) Fz(36px) Mb(-4px) D(ib)\"")
+    _ = scraped_text.index("Fw(b) Fz(36px) Mb(-4px) D(ib)\"")
     scraped_text = scraped_text[_:_+1000]
 
     return float(
         scraped_text[
-            scraped_text.index("47")+4:scraped_text.index("</s")
+            scraped_text.index("47")+4:scraped_text.index("</")
         ].replace(',', '')
     )
 
@@ -19,9 +19,9 @@ def get_percent_change(stock_name : str):
     url = f"https://finance.yahoo.com/quote/{stock_name}?p={stock_name}"
     scraped_text = get(url).text
 
-    _ = scraped_text.index("Trsdu(0.3s) Fw(500) Pstart(10px) Fz(24px)")
-    scraped_text = scraped_text[_+50:_+100]
-    scraped_text = scraped_text[scraped_text.index("48")+4:]
+    scraped_text = scraped_text[scraped_text.index("Fw(500) Pstart(8px) Fz(24px)")+30:]
+    _ = scraped_text.index("Fw(500) Pstart(8px) Fz(24px)")
+    scraped_text = scraped_text[_+50:_+300][scraped_text.index("48")+4:]
 
     return float(
         scraped_text[
@@ -34,12 +34,12 @@ def get_change(stock_name : str):
     url = f"https://finance.yahoo.com/quote/{stock_name}?p={stock_name}"
     scraped_text = get(url).text
 
-    _ = scraped_text.index("Trsdu(0.3s) Fw(500) Pstart(10px) Fz(24px)")
-    scraped_text = scraped_text[_+50:_+100]
+    _ = scraped_text.index("Fw(500) Pstart(8px) Fz(24px)")
+    scraped_text = scraped_text[_+50:_+200]
 
     return float(
         scraped_text[
-            scraped_text.index("48")+4:scraped_text.index("(")-1
+            scraped_text.index("value=")+7:scraped_text.index("\" active")
         ].replace(',','')
     )
 
@@ -49,11 +49,11 @@ def get_open(stock_name : str):
     scraped_text = get(url).text
 
     _ = scraped_text.index("OPEN-value")
-    scraped_text = scraped_text[_+56:_+170]
+    scraped_text = scraped_text[_:_+170]
 
     return float(
         scraped_text[
-            scraped_text.index("\">")+2:scraped_text.index("</s")
+            scraped_text.index("\">")+2:scraped_text.index("</")
         ].replace(',','')
     )
 
@@ -63,10 +63,10 @@ def get_previous_close(stock_name : str):
     scraped_text = get(url).text
 
     _ = scraped_text.index("PREV_CLOSE-value")
-    scraped_text = scraped_text[_+56:_+170]
+    scraped_text = scraped_text[_:_+170]
 
     return float(
         scraped_text[
-            scraped_text.index("\">")+2:scraped_text.index("</s")
+            scraped_text.index("\">")+2:scraped_text.index("</")
         ].replace(',','')
     )

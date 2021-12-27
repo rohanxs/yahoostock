@@ -1,6 +1,6 @@
 Metadata-Version: 2.1
 Name: yahoostock
-Version: 1.1.0
+Version: 1.2.0
 Summary: A package designed to scrape data from Yahoo Finance.
 Home-page: https://github.com/rohan0x/stockscrape
 Author: Rohan Singh
@@ -40,22 +40,31 @@ Note that each method accepts a stock ticker as a single parameter and returns a
 
 Here's an example:
 ```py
-from yahoostock import yahoo
+from yahoostock.yahoo import *
 
 stock_name = "GOOGL"
 
 function_list = [
-    yahoo.get_price,
-    yahoo.get_open,
-    yahoo.get_previous_close,
-    yahoo.get_change,
-    yahoo.get_percent_change
+    get_price,
+    get_open,
+    get_previous_close,
+    get_change,
+    get_percent_change
 ]
 
 for function in function_list:
     # prints price ($), opening price ($), last closing price ($),
     # change in price ($), and relative change (%)
     print(function(stock_name))
+```
+
+For information about a specific method's purpose refer to the respective method's docstrings.
+
+For example:
+```py
+from yahoostock.yahoo import get_price
+
+help(get_price)
 ```
 
 
