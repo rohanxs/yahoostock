@@ -5,13 +5,13 @@ with open("README.md", "r", encoding="utf-8") as fh:
 
 setuptools.setup(
     name="yahoostock",
-    version="1.3.0",
+    version="1.3.1",
     author="Rohan Singh",
     license="MIT",
     description="A package designed to scrape data from Yahoo Finance.",
     long_description=long_description,
     long_description_content_type="text/markdown",
-    url="https://github.com/rohanxs/stockscrape",
+    url="https://github.com/rohanxs/yahoostock",
     classifiers=[
         "Programming Language :: Python :: 3",
         "License :: OSI Approved :: MIT License",
