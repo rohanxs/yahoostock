@@ -3,6 +3,7 @@ README.md
 pyproject.toml
 setup.py
 src/yahoostock/__init__.py
+src/yahoostock/extra.py
 src/yahoostock/yahoo.py
 src/yahoostock.egg-info/PKG-INFO
 src/yahoostock.egg-info/SOURCES.txt

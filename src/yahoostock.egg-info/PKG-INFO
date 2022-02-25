@@ -1,11 +1,10 @@
 Metadata-Version: 2.1
 Name: yahoostock
-Version: 1.2.0
+Version: 1.3.0
 Summary: A package designed to scrape data from Yahoo Finance.
-Home-page: https://github.com/rohan0x/stockscrape
+Home-page: https://github.com/rohanxs/stockscrape
 Author: Rohan Singh
 License: MIT
-Project-URL: Bug Tracker, https://github.com/pypa/sampleproject/issues
 Platform: UNKNOWN
 Classifier: Programming Language :: Python :: 3
 Classifier: License :: OSI Approved :: MIT License
